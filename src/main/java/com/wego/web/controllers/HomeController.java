@@ -32,8 +32,7 @@ public class HomeController {
 	@GetMapping("/")
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home!  {}.", "HomeController");
-		int count = adminService.findTheNumberOfAdmins();		
-		model.addAttribute("count", count );	
+	
 		return "home";
 	}
 	
